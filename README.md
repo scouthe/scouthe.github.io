@@ -1,11 +1,13 @@
 # 何明岳的个人主页
 
-基于下方原版 HugoBlox Academic CV 模板，只配置简历内容，保留模板布局、配色与主题切换。
+基于下方 HugoBlox Academic CV 模板，继承原版配色、字体、页脚和明暗主题，按需求调整为单页双栏简历。桌面端左侧固定显示教育和工作摘要，右侧展示完整简历；手机端按上下顺序阅读。
 
 - 个人资料、教育、工作与技能：`data/authors/me.yaml`
 - 科研论文：`content/publications/`
 - 项目：`content/projects/`
-- 首页模块：`content/_index.md`
+- 单页布局：`layouts/home.html`，布局样式：`assets/css/resume-layout.css`
+- 首页设置：`content/_index.md`
+- 论文和项目源文件保留，但设置 `build.render: never`，全文汇总到首页，不再生成独立详情页。
 - 个人头像尚未提供；后续可放入 `assets/media/authors/me.png`。
 - 示例内容已标记为草稿；个人 PDF 尚未提供，因此暂不显示下载按钮。
 - 网站：<https://scouthe.github.io/>。推送到 main 后由原有 GitHub Actions 发布。

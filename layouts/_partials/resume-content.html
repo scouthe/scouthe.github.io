@@ -1,0 +1,6 @@
+{{- /* Give headings unique IDs when multiple source pages share the homepage. */ -}}
+{{- $prefix := printf "%s-%s-" .Section .File.ContentBaseName -}}
+{{- .Content
+  | replaceRE `id="([^"]+)"` (printf `id="%s${1}"` $prefix)
+  | replaceRE `href="#([^"]+)"` (printf `href="#%s${1}"` $prefix)
+  | safeHTML -}}

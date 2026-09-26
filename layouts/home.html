@@ -1,0 +1,92 @@
+{{ define "main" }}
+{{ $person := hugo.Data.authors.me }}
+<a class="resume-skip" href="#resume-main">跳转到简历内容</a>
+<div class="resume-layout">
+  <aside class="resume-sidebar" aria-label="个人资料、教育与工作背景">
+    <div class="resume-name-row">
+      <h1>{{ $person.name.display }}</h1>
+      <button class="theme-toggle" type="button" aria-label="切换明暗主题" title="切换明暗主题">
+        <span class="dark:hidden">{{ partial "functions/get_icon" (dict "name" "moon" "attributes" "class='h-5 w-5'") }}</span>
+        <span class="hidden dark:block">{{ partial "functions/get_icon" (dict "name" "sun" "attributes" "class='h-5 w-5'") }}</span>
+      </button>
+    </div>
+    <p class="resume-english-name">{{ $person.name.alternate }}</p>
+    <p class="resume-role">{{ $person.role }}</p>
+    <section class="sidebar-section" aria-labelledby="sidebar-education">
+      <h2 id="sidebar-education">教育背景</h2>
+      {{ range $person.education }}
+      <div class="sidebar-entry">
+        <h3>{{ .institution }}</h3>
+        <p>{{ .degree }}</p>
+        <p class="resume-muted">{{ .year }}</p>
+        <p class="resume-muted">{{ .summary }}</p>
+      </div>
+      {{ end }}
+    </section>
+    <section class="sidebar-section" aria-labelledby="sidebar-work">
+      <h2 id="sidebar-work">工作经历</h2>
+      {{ range $person.experience }}
+      <div class="sidebar-entry">
+        <h3>{{ .org }}</h3>
+        <p>{{ .role }}</p>
+        <p class="resume-muted">{{ time.Format "2006.01" .start }} — {{ time.Format "2006.01" .end }}</p>
+      </div>
+      {{ end }}
+    </section>
+    <section class="sidebar-section sidebar-contact" aria-labelledby="sidebar-contact">
+      <h2 id="sidebar-contact">联系方式</h2>
+      {{ range $person.links }}
+      <a href="{{ .url | safeURL }}">
+        {{ partial "functions/get_icon" (dict "name" .icon "attributes" "class='h-4 w-4'") }}
+        <span>{{ if hasPrefix .url "mailto:" }}{{ strings.TrimPrefix "mailto:" .url }}{{ else }}{{ .label }}{{ end }}</span>
+      </a>
+      {{ end }}
+    </section>
+  </aside>
+
+  <main id="resume-main" class="resume-main" data-pagefind-body>
+    <section id="about" class="resume-section">
+      <h2>个人简历</h2>
+      <div class="resume-prose">{{ $person.bio | markdownify }}</div>
+    </section>
+    <section id="interests" class="resume-section">
+      <h2>研究兴趣</h2>
+      <ul class="resume-interests">{{ range $person.interests }}<li>{{ . }}</li>{{ end }}</ul>
+    </section>
+    <section id="papers" class="resume-section">
+      <h2>科研</h2>
+      {{ range (where site.RegularPages "Section" "publications").ByDate.Reverse }}
+      <article id="research-{{ .File.ContentBaseName }}" class="resume-article">
+        <h3 lang="en">{{ .Title }}</h3>
+        <div class="resume-prose">{{ partial "resume-content" . }}</div>
+      </article>
+      {{ end }}
+    </section>
+    <section id="experience" class="resume-section">
+      <h2>经历</h2>
+      {{ range $person.experience }}
+      <article class="resume-article">
+        <h3>{{ .org }} · {{ .role }}</h3>
+        <p class="resume-period">{{ time.Format "2006.01" .start }} — {{ time.Format "2006.01" .end }}</p>
+        <div class="resume-prose">{{ .summary | markdownify }}</div>
+      </article>
+      {{ end }}
+    </section>
+    <section id="projects" class="resume-section">
+      <h2>项目</h2>
+      {{ range (where site.RegularPages "Section" "projects").ByDate.Reverse }}
+      <article id="project-{{ .File.ContentBaseName }}" class="resume-article">
+        <h3>{{ .Title }}</h3>
+        <div class="resume-prose">{{ partial "resume-content" . }}</div>
+        <ul class="resume-tags" aria-label="项目技术">{{ range .Params.tags }}<li>{{ . }}</li>{{ end }}</ul>
+      </article>
+      {{ end }}
+    </section>
+    <section id="skills" class="resume-section">
+      <h2>技能与语言</h2>
+      <dl class="resume-skills">{{ range $person.skills }}<div><dt>{{ .name }}</dt><dd>{{ range $i, $skill := .items }}{{ if $i }} · {{ end }}{{ $skill.label }}{{ end }}</dd></div>{{ end }}
+      {{ range $person.languages }}<div><dt>{{ .name }}</dt><dd>{{ .label }}</dd></div>{{ end }}</dl>
+    </section>
+  </main>
+</div>
+{{ end }}

@@ -5,6 +5,9 @@ summary: 武汉大学大学生创新创业项目，担任项目骨干，项目�
 tags:
 - 车联网
 - 位置数据
+build:
+  render: never
+  list: always
 ---
 
 **项目骨干** · 2018.12 — 2019.12

@@ -63,3 +63,6 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
+
+# All resume content is displayed on the homepage.
+disableKinds: [section, taxonomy, term, RSS]

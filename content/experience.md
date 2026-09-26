@@ -19,4 +19,7 @@ sections:
   content:
     title: 语言能力
     username: me
+build:
+  render: never
+  list: never
 ---

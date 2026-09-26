@@ -5,4 +5,7 @@ view: citation
 banner:
   caption: ''
   image: ''
+build:
+  render: never
+  list: always
 ---
