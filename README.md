@@ -1,3 +1,18 @@
+# 何明岳的个人主页
+
+基于下方原版 HugoBlox Academic CV 模板，只配置简历内容，保留模板布局、配色与主题切换。
+
+- 个人资料、教育、工作与技能：`data/authors/me.yaml`
+- 科研论文：`content/publications/`
+- 项目：`content/projects/`
+- 首页模块：`content/_index.md`
+- 个人头像尚未提供；后续可放入 `assets/media/authors/me.png`。
+- 示例内容已标记为草稿；个人 PDF 尚未提供，因此暂不显示下载按钮。
+- 网站：<https://scouthe.github.io/>。推送到 main 后由原有 GitHub Actions 发布。
+- 本地预览：Hugo Extended 0.162.0、Go、Node.js 22，执行 `pnpm install --frozen-lockfile`、`pnpm dev`。
+
+---
+
 # [The Academic CV That Gets You Hired](https://github.com/HugoBlox/hugo-theme-academic-cv)
 
 [![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv?utm_source=github&utm_medium=readme&utm_content=preview)

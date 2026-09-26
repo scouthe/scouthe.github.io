@@ -2,115 +2,83 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Alex Johnson
-  given: Alex
-  family: Johnson
-  alternate: ''  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
-  pronouns: he/him
-postnominals:
-  - PhD
-  - MIEEE
-status:
-  icon: "☕️"
-role: Senior AI Research Scientist
-bio: |
-  Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
-  has been published in top conferences like NeurIPS and ICML, with over
-  10,000 citations. Alex is passionate about pushing the boundaries of AI
-  while ensuring ethical development.
-
-affiliations:
-  - name: Meta AI
-    url: https://ai.meta.com/
-
+  display: 何明岳
+  given: 明岳
+  family: 何
+  alternate: Mingyue He
+role: 算法评测 · 多模态学习 · 遥感
+bio: 毕业于南安普顿大学遥感与地理信息科学专业，获硕士学位，本科就读于武汉大学遥感信息工程学院。 曾在浙江极氪科技担任算法评测工程师，从事智能驾驶功能验证、接口自动化与静态感知评测。 科研经历涵盖深度伪造检测的对抗攻击、小样本类增量音频分类，以及遥感红外图像超分辨率。
 links:
-  - icon: at-symbol
-    url: mailto:alex.johnson@example.com
-    label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
-  - icon: brands/github
-    url: https://github.com/example
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/example/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
-
+- icon: at-symbol
+  url: mailto:scouthe@163.com
+  label: 邮箱
+- icon: brands/github
+  url: https://github.com/scouthe
+  label: GitHub
+- icon: hero/phone
+  url: tel:+8613037114551
+  label: 电话 / 微信：+86 13037114551
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
-
+- 对抗攻击与模型鲁棒性
+- 小样本与持续学习
+- 遥感图像处理
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
-    summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
-
+- degree: 遥感与地理信息科学 · 硕士
+  institution: 南安普顿大学
+  start: 2021-09-01
+  end: 2022-12-31
+  summary: 英国 · 南安普顿
+  year: 2021.09 — 2022.12
+- degree: 遥感科学与技术 · 学士
+  institution: 武汉大学
+  start: 2017-09-01
+  end: 2021-06-30
+  summary: 遥感信息工程学院 · 中国 · 武汉
+  year: 2017.09 — 2021.06
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
-    summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+- role: 算法评测工程师
+  org: 浙江极氪科技
+  start: 2023-03-01
+  end: 2025-03-31
+  summary: '**智驾功能与座舱域需求验收**
 
+
+    围绕智驾功能及关联系统座舱域需求，完成测试用例设计、评审、执行与报告发布，支持版本验收。
+
+
+    **HMI / SOME/IP 接口自动化**
+
+
+    设计 HMI 及车载 SOME/IP 接口测试用例，完成报文反序列化解析，独立开发协议收发自动化测试框架，补充接口测试覆盖，并开展网络层协议测试。
+
+
+    **冒烟测试与系统鲁棒性**
+
+
+    开发、维护并重构前后冒烟测试框架，随业务扩展新增与部署用例；开展模块间接口集成测试，以及节点故障注入、异常监控和超限输入测试，跟踪问题定位与闭环。
+
+
+    **道路结构认知与静态感知评测**
+
+
+    面向感知重建下游的道路结构认知模块，开展功能测试、算法评测与自动化开发；检查道路中心线的合理性和稳定性，构建车道优先级测试数据集，提取关键字并评估结果正确性与召回率。'
 skills:
-  - name: Technical Skills
-    items:
-      - label: Python
-        level: 5
-      - label: Machine Learning
-        level: 5
-      - label: Cloud Computing
-        level: 4
-  - name: Research & Communication
-    items:
-      - label: Academic Writing
-        level: 5
-      - label: Conference Presentations
-        level: 4
-      - label: Grant Proposals
-        level: 4
-
+- name: 编程与数据
+  items:
+  - label: Python
+  - label: C / C++
+  - label: Java
+  - label: SQL
+- name: 算法与工程
+  items:
+  - label: PyTorch
+  - label: Playwright
+  - label: Docker
+- name: 开发与写作
+  items:
+  - label: Git
+  - label: Linux
+  - label: LaTeX
 languages:
-  - name: English
-    level: 5
-    label: Native
-  - name: Spanish
-    level: 4
-    label: Fluent
-
-awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy
+- name: 英语
+  label: 雅思 6.0
