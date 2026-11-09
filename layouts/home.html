@@ -53,15 +53,6 @@
       <h2>研究兴趣</h2>
       <ul class="resume-interests">{{ range $person.interests }}<li>{{ . }}</li>{{ end }}</ul>
     </section>
-    <section id="papers" class="resume-section">
-      <h2>科研</h2>
-      {{ range (where site.RegularPages "Section" "publications").ByWeight }}
-      <article id="research-{{ .File.ContentBaseName }}" class="resume-article">
-        <h3 lang="en">{{ .Title }}</h3>
-        <div class="resume-prose">{{ partial "resume-content" . }}</div>
-      </article>
-      {{ end }}
-    </section>
     {{ with $person.awards }}
     <section id="awards" class="resume-section">
       <h2>竞赛荣誉</h2>
@@ -77,6 +68,15 @@
       {{ end }}
     </section>
     {{ end }}
+    <section id="papers" class="resume-section">
+      <h2>科研</h2>
+      {{ range (where site.RegularPages "Section" "publications").ByWeight }}
+      <article id="research-{{ .File.ContentBaseName }}" class="resume-article">
+        <h3 lang="en">{{ .Title }}</h3>
+        <div class="resume-prose">{{ partial "resume-content" . }}</div>
+      </article>
+      {{ end }}
+    </section>
     <section id="experience" class="resume-section">
       <h2>经历</h2>
       {{ range $person.experience }}
