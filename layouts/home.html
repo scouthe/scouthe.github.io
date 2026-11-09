@@ -55,13 +55,28 @@
     </section>
     <section id="papers" class="resume-section">
       <h2>科研</h2>
-      {{ range (where site.RegularPages "Section" "publications").ByDate.Reverse }}
+      {{ range (where site.RegularPages "Section" "publications").ByWeight }}
       <article id="research-{{ .File.ContentBaseName }}" class="resume-article">
         <h3 lang="en">{{ .Title }}</h3>
         <div class="resume-prose">{{ partial "resume-content" . }}</div>
       </article>
       {{ end }}
     </section>
+    {{ with $person.awards }}
+    <section id="awards" class="resume-section">
+      <h2>竞赛荣誉</h2>
+      {{ range . }}
+      <article class="resume-article">
+        <p class="resume-period resume-award-year">{{ .year }} 年</p>
+        <h3>{{ .title }}</h3>
+        <ul class="resume-tags" aria-label="获奖成绩">
+          <li>{{ .result }}</li>
+          <li>排名 {{ .rank }}</li>
+        </ul>
+      </article>
+      {{ end }}
+    </section>
+    {{ end }}
     <section id="experience" class="resume-section">
       <h2>经历</h2>
       {{ range $person.experience }}

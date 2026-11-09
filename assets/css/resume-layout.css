@@ -74,6 +74,7 @@ body:has(.resume-layout) #page-bg {
 .resume-article + .resume-article { margin-top: 20px; }
 .resume-article > h3 { font-size: 1.1rem; line-height: 1.65; font-weight: 600; margin: 0 0 16px; overflow-wrap: anywhere; }
 .resume-period { color: var(--resume-muted); font-size: .85rem; margin: -5px 0 16px; }
+.resume-award-year { margin: 0 0 8px; }
 .resume-tags { margin-top: 18px; gap: 8px; }
 .resume-tags li { font-size: .76rem; padding: 3px 10px; }
 .resume-skills { margin: 0; }

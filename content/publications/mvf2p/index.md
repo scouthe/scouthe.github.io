@@ -4,13 +4,14 @@ date: '2025-08-01'
 authors:
 - me
 author_notes:
-- 共同第一作者
+- 第一作者
 publication_types:
 - paper-conference
 publication:
   name: Interspeech 2025
 featured: true
-summary: Interspeech 2025 · CCF-B · 共同第一作者 · 已录用。针对基类过拟合与灾难性遗忘，提出 MVF2P 框架，融合 Log-mel 与 Gammatone 频谱，并结合参数扰动提升增量学习稳定性。在 NS-100 与 LS-100 数据集上取得优于现有方法的平均准确率，并降低增量阶段的性能衰减。
+weight: 20
+summary: Interspeech 2025 · CCF-B · 第一作者 · 已录用。针对基类过拟合与灾难性遗忘，提出 MVF2P 框架，融合 Log-mel 与 Gammatone 频谱，并结合参数扰动提升增量学习稳定性。在 NS-100 与 LS-100 数据集上取得优于现有方法的平均准确率，并降低增量阶段的性能衰减。
 abstract: 针对基类过拟合与灾难性遗忘，提出 MVF2P 框架，融合 Log-mel 与 Gammatone 频谱，并结合参数扰动提升增量学习稳定性。在 NS-100 与 LS-100 数据集上取得优于现有方法的平均准确率，并降低增量阶段的性能衰减。
 tags:
 - 音频分类
@@ -22,7 +23,7 @@ build:
 
 #### 项目信息
 
-Interspeech 2025 · CCF-B · 共同第一作者 · 已录用
+Interspeech 2025 · CCF-B · 第一作者 · 已录用
 
 研究时间：2025.05 — 2025.08
 

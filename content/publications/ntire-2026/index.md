@@ -1,5 +1,5 @@
 ---
-title: Remote Sensing Infrared Image Super-Resolution Challenge
+title: The First Challenge on Remote Sensing Infrared Image Super-Resolution at NTIRE 2026
 date: '2026-03-01'
 authors:
 - me
@@ -10,6 +10,7 @@ publication_types:
 publication:
   name: NTIRE 2026 / CVPR Workshop 2026
 featured: false
+weight: 40
 summary: NTIRE 2026 / CVPR Workshop 2026 · 共同作者 · 已录用。参与首届 NTIRE 遥感红外图像超分辨率挑战的 benchmark 构建与综述论文撰写，围绕 ×4 超分辨率任务，参与 13 支队伍提交方法的评测与比较。
 abstract: 参与首届 NTIRE 遥感红外图像超分辨率挑战的 benchmark 构建与综述论文撰写，围绕 ×4 超分辨率任务，参与 13 支队伍提交方法的评测与比较。
 tags:

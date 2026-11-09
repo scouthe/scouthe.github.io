@@ -7,7 +7,7 @@ name:
   family: 何
   alternate: Mingyue He
 role: 算法评测 · 多模态学习 · 遥感
-bio: 毕业于南安普顿大学遥感与地理信息科学专业，获硕士学位，本科就读于武汉大学遥感信息工程学院。 曾在浙江极氪科技担任算法评测工程师，从事智能驾驶功能验证、接口自动化与静态感知评测。 科研经历涵盖深度伪造检测的对抗攻击、小样本类增量音频分类，以及遥感红外图像超分辨率。
+bio: 毕业于南安普顿大学遥感与地理信息科学专业，获硕士学位，本科就读于武汉大学遥感信息工程学院。 曾在浙江极氪科技担任算法评测工程师，从事智能驾驶功能验证、接口自动化与静态感知评测。 科研经历涵盖深度伪造检测的对抗攻击、小样本类增量音频分类、水下声学目标识别，以及遥感红外图像超分辨率。
 links:
 - icon: at-symbol
   url: mailto:scouthe@163.com
@@ -21,6 +21,7 @@ links:
 interests:
 - 对抗攻击与模型鲁棒性
 - 小样本与持续学习
+- 水下声学目标识别
 - 遥感图像处理
 education:
 - degree: 遥感与地理信息科学 · 硕士
@@ -82,3 +83,16 @@ skills:
 languages:
 - name: 英语
   label: 雅思 6.0
+awards:
+- year: 2026
+  title: ACM MM 媒体伪造对抗攻击比赛
+  result: 第三名
+  rank: 3/43
+- year: 2026
+  title: ACM Multimedia 2026 国际多媒体大挑战赛音频赛道
+  result: 二等奖
+  rank: 2/56
+- year: 2026
+  title: ACM Multimedia 2026 第九届社交媒体预测挑战赛
+  result: 第五名
+  rank: 5/74

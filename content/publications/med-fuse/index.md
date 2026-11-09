@@ -1,5 +1,5 @@
 ---
-title: 'MeD-Fuse: Dual-Delta Media-Aware Adversarial Attack for Deepfake Detection'
+title: 'SFD-Fuse: Spatial-Frequency Decoupled Fusion Attack for Deepfake Detection'
 date: '2026-06-01'
 authors:
 - me
@@ -10,6 +10,7 @@ publication_types:
 publication:
   name: ACM MM 2026
 featured: true
+weight: 10
 summary: ACM MM 2026 · CCF-A · 第一作者。针对深度伪造检测器在压缩、重编码与社交媒体传播场景下的鲁棒性问题，提出空间—频域协同的媒体感知对抗攻击框架。
 abstract: 针对深度伪造检测器在压缩、重编码与社交媒体传播场景下的鲁棒性问题，提出空间—频域协同的媒体感知对抗攻击框架。
 tags:
